@@ -7,7 +7,7 @@ const { token , partner, link, idvc }  = require('./config.json');
 client.on('ready',async () => {  await console.log(client.user.tag);})
 client.on('ready', async () => {
  
- client.user.setActivity(`Free Ads Send Your Link Server`, { type:'WATCHING' })
+ client.user.setActivity(`https://discord.gg/yswzj8aCmk `, { type:'WATCHING' })
 });
 
 
@@ -92,7 +92,7 @@ client.on("messageCreate", async message => {
 
 client.on('messageCreate',async (message) => {
     if (message.author.bot) return;
-    if (message.channel.type == 'DM') {
+    if (message.channel.type == '1066808222083727430') {
       
     let share = await client.channels.cache.get(partner);
     let args = await message.content.split(' ');
@@ -133,7 +133,7 @@ const { joinVoiceChannel } = require('@discordjs/voice');
 
 client.channels.fetch(`${idvc}`).then((channel) => { 
   console.log(`${client.user.tag} Connected To Voice`) 
-const VoiceConnection = joinVoiceChannel({ channelId: channel.id, 
+const VoiceConnection = joinVoiceChannel({ 1063123703438778388: channel.id, 
 guildId: channel.guild.id, 
 adapterCreator: channel.guild.voiceAdapterCreator,
 selfDeaf: true,
@@ -147,4 +147,4 @@ console.log(err)
 
 
 
-client.login(token)
+client.login(MTA2NjgwNjM4MTEyODIwODQxNw.GvoVDk.SFAmlG657lnOaZGJWxoxcSJPHtUt1H2ZinvaGA)
